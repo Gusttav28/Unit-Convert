@@ -361,13 +361,13 @@ export default function ConverterForm({
     return(
         <div className="overflow-y-hidden overflow-x-hidden flex flex-col justify-center gap-1 lg:flex lg:flex-col lg:gap-4">
             <div className="">
-                <h1 className="lg:mr-200 lg:ml-200 flex flex-wrap justify-center mt-20 text-xl text-neutral-400 lg:flex lg:flex-wrap lg:justify-center lg:mt-20 lg:text-4xl hover:scale-105 transition-transform">{titlePageName}</h1>
+                <h1 className="lg:mr-200 lg:ml-208 flex flex-wrap justify-center mt-20 text-2xl text-neutral-400 lg:flex lg:flex-wrap lg:justify-center lg:mt-20 lg:text-4xl hover:scale-105 transition-transform">{titlePageName}</h1>
                 <form className="">
-                    <label htmlFor="Length" className="flex flex-wrap justify-center mr-36 mt-10 text-neutral-400 lg:flex lg:flex-wrap lg:justify-center lg:mr-36 lg:mt-10">
+                    <label htmlFor="Length" className="flex flex-wrap justify-center text-sm mr-36 mt-10 text-neutral-400 lg:flex lg:flex-wrap lg:justify-center lg:mr-40 lg:mt-10">
                         {firstLabel}
                     </label>
                     <select
-                        className="bg-white text-black ml-20 lg:ml-175 focus:outline-white rounded-2xl"
+                        className="bg-white text-neutral-400 ml-15 scale-100 p-2 mt-3 lg:ml-175 lg:mt-3 lg:scale-115 lg:p-2 focus:outline-white rounded-2xl"
                         onChange={handleChangeUnitF}
                         value={unitConvert_from}
                         >
@@ -378,11 +378,11 @@ export default function ConverterForm({
                     </select>
                     
             <div className="ml-60 lg:ml-250 lg:mr-120">
-                        <label htmlFor="Length" className="flex flex-wrap justify-center -mt-12 -ml-2 text-neutral-400 lg:flex lg:flex-wrap lg:justify-center lg:-ml-80 lg:-mt-12">
+                        <label htmlFor="Length" className="flex flex-wrap justify-center -mt-17 -ml-15 text-neutral-400 text-sm lg:flex lg:flex-wrap lg:justify-center lg:-ml-80 lg:-mt-17">
                             {secondLabel}
                         </label>
                         <select
-                            className="bg-white text-black ml-10 lg:-ml-30 focus:outline-white rounded-2xl"
+                            className="bg-white text-neutral-400 -ml-2 scale-100 p-2 mt-3 lg:mt-3 lg:scale-115 lg:p-2 lg:-ml-30 focus:outline-white rounded-2xl"
                             onChange={handleChangeUnitTo}
                             value={unitConvert_to}
                             >
@@ -393,19 +393,19 @@ export default function ConverterForm({
                         </select>
             </div>
             <div className=""> 
-                        <label htmlFor="Length" className="flex flex-wrap justify-center mr-45 mt-10 text-neutral-400 lg:flex lg:flex-wrap lg:justify-center lg:mr-36 lg:mt-17">
+                        <label htmlFor="Length" className="flex flex-wrap justify-center mr-38 mt-10 text-neutral-400 text-sm  lg:flex lg:flex-wrap lg:justify-center lg:mr-40 lg:mt-17">
                             {thirdLabel}
                         </label>
                         <input type="number" 
                             name="length"
                             typeof="number"
                             value={unitNumber !== 0 ? unitNumber : ""} 
-                            className="bg-white text-black ml-7 text-base lg:ml-170 lg:mt-1 focus:outline-white rounded-2xl"
+                            className="bg-white text-black ml-7 text-base lg:scale-90 scale-80 p-2 mt-3 lg:p-2 lg:ml-168 lg:mt-2 focus:outline-white rounded-2xl"
                             onChange={handleUnitNumber}
                         />
             </div>
-            <div className="ml-60 lg:ml-220 lg:mr-100">
-                        <label htmlFor="Length" className="flex flex-wrap justify-center mr-11 -mt-12 text-neutral-400 lg:flex lg:flex-wrap lg:justify-center lg:-ml-61 lg:-mt-13 lg:mb-1">
+            <div className="ml-55 lg:ml-220 lg:mr-100">
+                        <label htmlFor="Length" className="flex flex-wrap justify-center mr-14 -mt-17.5 text-neutral-400 text-sm  lg:flex lg:flex-wrap lg:justify-center lg:-ml-61 lg:-mt-17 lg:mb-1">
                             {fourLabel}
                         </label>
                         <input type="number" 
@@ -413,15 +413,15 @@ export default function ConverterForm({
                             typeof="number"
                             value={result}
                             disabled
-                            className="bg-white text-black -ml-2 lg:-ml-1 focus:outline-white rounded-2xl"
+                            className="bg-white text-black scale-90 -ml-5 mt-3.5 p-1 lg:scale-110 lg:p-1 lg:mt-2 lg:-ml-1 focus:outline-white rounded-2xl"
                         />
             </div>
             <div className="mr-200 lg:mr-400">
-                <button className="ml-30 mt-10 bg-slate-200 text-black hover:bg-slate-300 rounded-2xl font-bold hover:scale-105 transition-transform p-3 lg:mt-10 lg:ml-180" onClick={buttonSave}>Convert</button>
+                <button className="ml-30 mt-10 bg-slate-200 text-black hover:bg-slate-300 rounded-2xl font-bold hover:scale-105 transition-transform p-3 lg:mt-10 lg:ml-190" onClick={buttonSave}>Convert</button>
             
             </div>                    
-            <div className="mr-10 ml-60 -mt-10 lg:-mt-6 lg:mr-200 lg:ml-200">
-                <button className="-mt-2 bg-slate-200 text-black hover:bg-slate-300 rounded-2xl font-bold hover:scale-105 transition-transform p-3 lg:-mt-30 lg:ml-25" onClick={buttonReset}>Reset</button>
+            <div className="mr-17 ml-55 -mt-10 lg:-mt-9 lg:mr-200 lg:ml-190">
+                <button className="-mt-2 bg-slate-200 text-black hover:bg-slate-300 rounded-2xl font-bold hover:scale-105 transition-transform p-3 lg:-mt-34 lg:ml-25" onClick={buttonReset}>Reset</button>
             </div>                    
                 </form>
             </div>
