@@ -367,7 +367,7 @@ export default function ConverterForm({
                         {firstLabel}
                     </label>
                     <select
-                        className="bg-white text-neutral-400 ml-15 scale-100 p-2 mt-3 lg:ml-175 lg:mt-3 lg:scale-115 lg:p-2 focus:outline-white rounded-2xl"
+                        className="lg:bg-white text-neutral-400 ml-15 scale-100 p-2 mt-3 lg:ml-175 lg:mt-3 lg:scale-115 lg:p-2 focus:outline-white rounded-2xl lg:rounded-2xl"
                         onChange={handleChangeUnitF}
                         value={unitConvert_from}
                         >
@@ -378,11 +378,11 @@ export default function ConverterForm({
                     </select>
                     
             <div className="ml-60 lg:ml-250 lg:mr-120">
-                        <label htmlFor="Length" className="flex flex-wrap justify-center -mt-17 -ml-15 text-neutral-400 text-sm lg:flex lg:flex-wrap lg:justify-center lg:-ml-80 lg:-mt-17">
+                        <label htmlFor="Length" className="flex flex-wrap justify-center -mt-15 -ml-15 text-neutral-400 text-sm lg:flex lg:flex-wrap lg:justify-center lg:-ml-80 lg:-mt-17">
                             {secondLabel}
                         </label>
                         <select
-                            className="bg-white text-neutral-400 -ml-2 scale-100 p-2 mt-3 lg:mt-3 lg:scale-115 lg:p-2 lg:-ml-30 focus:outline-white rounded-2xl"
+                            className=" lg:bg-white text-neutral-400 -ml-2 scale-100 p-2 mt-3 lg:mt-3 lg:scale-115 lg:p-2 lg:-ml-30 focus:outline-white rounded-2xl lg:rounded-2xl"
                             onChange={handleChangeUnitTo}
                             value={unitConvert_to}
                             >
@@ -413,7 +413,7 @@ export default function ConverterForm({
                             typeof="number"
                             value={result}
                             disabled
-                            className="bg-white text-black scale-90 -ml-5 mt-3.5 p-1 lg:scale-110 lg:p-1 lg:mt-2 lg:-ml-1 focus:outline-white rounded-2xl"
+                            className="bg-white text-black text-base scale-90 -ml-5 mt-3.5 p-1 lg:scale-110 lg:p-1 lg:mt-2 lg:-ml-1 focus:outline-white rounded-2xl"
                         />
             </div>
             <div className="mr-200 lg:mb-10 lg:-ml-10 lg:mr-100">
