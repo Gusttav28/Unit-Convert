@@ -416,12 +416,12 @@ export default function ConverterForm({
                             className="bg-white text-black scale-90 -ml-5 mt-3.5 p-1 lg:scale-110 lg:p-1 lg:mt-2 lg:-ml-1 focus:outline-white rounded-2xl"
                         />
             </div>
-            <div className="mr-200 lg:mr-400">
-                <button className="ml-30 mt-10 bg-slate-200 text-black hover:bg-slate-300 rounded-2xl font-bold hover:scale-105 transition-transform p-3 lg:mt-10 lg:ml-190" onClick={buttonSave}>Convert</button>
+            <div className="mr-200 lg:mb-10 lg:-ml-10 lg:mr-100">
+                <button className="ml-30 mt-10 bg-slate-200 text-black hover:bg-slate-300 rounded-2xl font-bold hover:scale-105 transition-transform p-3 lg:mt-10 lg:ml-200" onClick={buttonSave}>Convert</button>
             
             </div>                    
-            <div className="mr-17 ml-55 -mt-10 lg:-mt-9 lg:mr-200 lg:ml-190">
-                <button className="-mt-2 bg-slate-200 text-black hover:bg-slate-300 rounded-2xl font-bold hover:scale-105 transition-transform p-3 lg:-mt-34 lg:ml-25" onClick={buttonReset}>Reset</button>
+            <div className="mr-17 ml-55 -mt-10 lg:-mt-19 lg:mr-200 lg:ml-220">
+                <button className="-mt-2 bg-slate-200 text-black hover:bg-slate-300 rounded-2xl font-bold hover:scale-105 transition-transform p-3 lg:-mt-34 lg:-ml-2" onClick={buttonReset}>Reset</button>
             </div>                    
                 </form>
             </div>
